@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+</head>
+
+<body>
+    <h1>Wypełnij formularz:</h1>
+
+    <form action="https://formspree.io/f/mqkvnevy" method="POST">
+        <label for="username">Imię:</label>
+        <input type="text" name="username" id="username" placeholder="Anna"> <br><br>
+        <label for="userlastname">Nazwisko:</label>
+        <input type="text" name="userlastname" id="userlastname" placeholder="Kowalska"> <br><br>
+        <label for="email">Adres e-mail:</label>
+        <input type="email" name="email" id="email" placeholder="anna.kowalska@post.vp"> <br><br>
+        <label for="tel">Numer telefonu:</label>
+        <input type="tel" name="tel" id="tel" placeholder="+48 111 111 111"> <br><br>
+
+        <label for="city">Miasto:</label>
+        <select name="city" id="city">
+            <option value="Kraków">Kraków</option>
+            <option value="Warszawa">Warszawa</option>
+            <option value="Gdańsk">Gdańsk</option>
+        </select> <br><br>
+
+        Płeć:
+        <label><input type="radio" name="gender">Kobieta</label>
+        <label><input type="radio" name="gender">Mężczyzna</label> <br><br>
+
+        <label for="statement">Zgoda:</label> <br>
+        <input type="checkbox" name="agreement" id="statement"> I agree to the processing of personal data provided in this document
+        for realising the recruitment process pursuant to the Personal Data Protection Act of 10 May 2018 (Journal of
+        Laws 2018, item 1000) and in agreement with Regulation (EU) 2016/679 of the European Parliament and of the
+        Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and
+        on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation). <br><br>
+
+        <label for="message">Wiadomość:</label> <br>
+        <textarea id="message" name="message" maxlength="300"></textarea> <br><br>
+
+        <input type="submit" value="Wyślij">
+    </form>
+</body>
+
+</html>
